@@ -10,6 +10,14 @@
 - https://beincrypto.com/learn/how-to-install-geth-node/
 
 
+
+
+
+
+
+
+
+
 <br><br>
 <br><br>
 _____________________________________
@@ -19,14 +27,32 @@ _____________________________________
 
 # Install
 
+<br><br>
+<br><br>
+
 ## Docker
-```
+```shell
 sudo docker pull ethereum/client-go
 sudo docker run -it -p 30303:30303 ethereum/client-go
 ```
 
+<br><br>
+<br><br>
+
+## apt
+```shell
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+```
+
+<br><br>
+<br><br>
+
 ## Executuable
 - https://geth.ethereum.org/downloads
+
+
 
 
 
