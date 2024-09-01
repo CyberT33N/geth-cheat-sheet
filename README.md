@@ -666,6 +666,11 @@ COPYRIGHT:
 
 
 
+
+
+
+
+
 <br><br>
 <br><br>
 _____________________________________
@@ -709,17 +714,15 @@ sudo apt-get install ethereum
 
 <br><br>
 <br><br>
-_____________________________________
-_____________________________________
 <br><br>
 <br><br>
 
-# Consensus Clients
+## Consensus Clients
 - Geth is an execution client. Historically, an execution client alone was enough to run a full Ethereum node. However, since Ethereum swapped from proof-of-work (PoW) to proof-of-stake (PoS) based consensus, Geth needs to be coupled to another piece of software called a "consensus client". There are five consensus clients available, all of which connect to Geth in the same way
 - https://geth.ethereum.org/docs/getting-started/consensus-clients
 
 
-## lodestar
+### lodestar
 - https://github.com/CyberT33N/lodestar-cheat-sheet
 
 
@@ -742,6 +745,9 @@ _____________________________________
 
 # Start
 ```shell
+# Consensus Clients - lodester
+~/Projects/lodestar-quickstart/setup.sh  --dataDir sepolia-data --elClient nethermind --network sepolia --detached --dockerWithSudo
+
 geth --http.api eth,web3,net,txpool --ws --ws.api eth,web3,net,txpool
 ```
 - Port is sefault 8545 but you can use  --http.port
