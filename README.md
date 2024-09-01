@@ -740,7 +740,7 @@ _____________________________________
 
 # Start
 ```shell
-geth --http.api eth,web3,net,txpool --ws --ws.api eth,web3,net,txpool --syncmode light
+geth --http.api eth,web3,net,txpool --ws --ws.api eth,web3,net,txpool
 ```
 - Port is sefault 8545 but you can use  --http.port
 
