@@ -632,8 +632,13 @@ COPYRIGHT:
 
 
 
+
+
 <br><br>
 <br><br>
+<br><br>
+<br><br>
+
 
 # Wiki
 
@@ -732,5 +737,11 @@ _____________________________________
 _____________________________________
 <br><br>
 <br><br>
+
+# Start
+```shell
+geth --http.api eth,web3,net,txpool --ws --ws.api eth,web3,net,txpool --syncmode light
+```
+- Port is sefault 8545 but you can use  --http.port
 
 
